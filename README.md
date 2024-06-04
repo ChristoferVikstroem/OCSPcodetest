@@ -34,7 +34,7 @@ Run the command in the directory that the pom.xml file is located.
 ### Using the OCSPClient
     $ mvn exec:java -Dexec.mainClass="com.example.ocspclient.OCSPClient"
 
-The result is printed in the terminal and includes the basic response and different single responses (such as ID, Status) by using BouncyCastle's basicOCSPResp and SingleReap. 
+The result is printed in the terminal and includes the basic response and different single responses (such as ID, Status) by using BouncyCastle's basicOCSPResp and SingleResp. 
 
 ### Running the tests
     $ mvn test
