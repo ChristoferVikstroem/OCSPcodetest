@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "OCSPClient",
+            "request": "launch",
+            "mainClass": "OCSPClient",
+            "projectName": "OCSPcodetest_e1a49d49"
+        }
+    ]
+}
