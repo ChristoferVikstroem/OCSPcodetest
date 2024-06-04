@@ -1,5 +1,6 @@
 # OCSPcodetest
-Code tests for Keyfactor by Christofer Vikström.
+Code test for Keyfactor by Christofer Vikström. 
+This solution is for command line based. Comments exist in the code but this readme is a short summary.
 
 ## OCSPClient.java
 A simple implementation of an OCSP client. It contains two methods: main and printOCSPResponse.
@@ -21,3 +22,21 @@ Created a byte array that is too short and throws an IOException.
 
 ### testNullArray
 The test invokes the printOCSPResponse will a null parameter, resulting in test asserting a NullPointerException.
+
+
+## Running the program
+
+### Compile with Maven
+Run the command in the directory that the pom.xml file is located.
+
+    $ mvn compile
+
+### Using the OCSPClient
+    $ mvn exec:java -Dexec.mainClass="com.example.ocspclient.OCSPClient"
+
+The result is printed in the terminal and includes the basic response and different single responses (such as ID, Status) by using BouncyCastle's basicOCSPResp and SingleReap. 
+
+### Running the tests
+    $ mvn test
+
+The test result is printed in the terminal but can be found under surefire-reports.
